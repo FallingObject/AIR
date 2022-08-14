@@ -14,3 +14,8 @@ class VoiceManager(commands.Cog):
     @commands.Cog.listener()
     async def on_voice_state_update(self,member,before,after) -> None:
         print(f'\n\n MEMBER: {member} \n\n BEFORE: {before}\n\n AFTER: {after}')
+
+
+def setup(bot) -> None:
+    bot.add_cog(VoiceManager(bot))
+    
