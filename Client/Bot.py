@@ -70,12 +70,12 @@ async def limit_active_vc(ctx,*,amount: Option(int, default=None, required=True,
     await ctx.respond(f'`{amount} is now the Active Voice Channel per User Limit`')
 
 
-@bot.event
-async def on_application_command_error(ctx, error):
-    if (error, commands.CommandOnCooldown):
-        await ctx.respond(f'You are on cooldown for {round(error.retry_after)} seconds')
-    else:
-        raise error
+# @bot.event
+# async def on_application_command_error(ctx, error):
+#     if (error, commands.CommandOnCooldown):
+#         await ctx.respond(f'You are on cooldown for {round(error.retry_after)} seconds')
+#     else:
+#         raise error
 
 
 

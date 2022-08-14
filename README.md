@@ -16,4 +16,3 @@ A Discord bot that is a working progress
 ## API Reference for server side
 
 [😎] Comming sooonnn!!!!
-
